@@ -1,0 +1,17 @@
+Laptop/Desktop Layout
+- Navigation bar at the top 
+
+
+Phone Layout 
+- Hamburger menu at the top that expands and contracts 
+
+Ideas
+- Make guides for the website, for example for react, SQL, typescript, swift
+- For the front page have pictures with transitions between them 
+
+
+Things to think about /fix
+- If the page loads in too slowly, try a woff font instead (didn't really help much before)
+- Do a lighthouse test at the end 
+- use cubic-bezier animation for how proficient my skills in languages are
+- Allow users to customize parts of the background like a color picker for the background gradient (have a little preview before so they can see what it will look like)
