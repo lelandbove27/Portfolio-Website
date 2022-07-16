@@ -8,7 +8,8 @@ body {
    font-family: customFont; 
    min-height: 100vh;
    min-width: 100vw;
-   background: linear-gradient(45deg, red, white, blue);
+   /*background: linear-gradient(45deg, red, white, blue);*/
+   background: linear-gradient(45deg, black, rgb(149, 149, 149), black);
    background-size: 400% 400%;
    animation: background-animation 30s ease infinite;
 }
