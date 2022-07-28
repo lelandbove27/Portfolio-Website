@@ -15,3 +15,11 @@ Things to think about /fix
 - Do a lighthouse test at the end 
 - use cubic-bezier animation for how proficient my skills in languages are
 - Allow users to customize parts of the background like a color picker for the background gradient (have a little preview before so they can see what it will look like)
+
+
+Image gallery: 
+- For the image gallery, have two classes: transparent and visible
+- Then, have each of the images with ids img0, img1, img2...
+- Take the last character in the id
+- If the forward button is pressed then add 1 and if the backwards button is pressed subtract 1 (modulo the number of images)
+- Have the button not work or wrap around if it is 0 or maximum (if img# > maxImg || img# < 0)
