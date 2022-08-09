@@ -168,7 +168,7 @@ footer {
 
  #project-nav > a:hover {
   background-color: gray;
- }
+ } 
 
  #project-main {
   display: flex;
@@ -176,6 +176,30 @@ footer {
  }
 
  #project-content {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+ }
+
+ .non-displayed-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ }
+
+ .small-image {
+  height: 100px;
+  width: 150px;
+  border-style:groove;
+ }
+
+ .small-image:hover {
+  filter: brightness(130%);
+ }
+
+ .displayed-image {
+  height: 470px;
+  width: 950px;
+  padding: 20px;
  }

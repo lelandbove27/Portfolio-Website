@@ -29,3 +29,4 @@ rightArrow.addEventListener('click', function() {
 });
 
 //use id manipulation to make the next one opaque or not
+
