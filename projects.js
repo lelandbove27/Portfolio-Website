@@ -1,11 +1,14 @@
-let rmImageSource = document.getElementById('img1').src;
+let rmImageSource = document.getElementById('rm-img1').src;
 let rmDisplayedImage = document.getElementById('rm-displayed-image');
 rmDisplayedImage.src = rmImageSource;
 
-//query select all displayed-image elements, add the
-//default class to all of the first images in each 
-//thing and then query select all of those and then
-//match them up in the array properly for all default images
+let dbseImageSource = document.getElementById('dbse-img1').src;
+let dbseDisplayedImage = document.getElementById('dbse-displayed-image');
+dbseDisplayedImage.src = dbseImageSource;
+
+let mfImageSource = document.getElementById('mf-img1').src;
+let mfDisplayedImage = document.getElementById('mf-displayed-image');
+mfDisplayedImage.src = mfImageSource;
 
 let smallImages = document.querySelectorAll('.small-image');
 smallImages.forEach(image => {

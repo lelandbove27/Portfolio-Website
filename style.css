@@ -3,13 +3,20 @@
    src: url("media/Comfortaa-VariableFont_wght.woff");
 }
 
+h1 {
+  padding: 20px;
+}
+
 body {
    margin: 0px;
    padding: 0px;
-   font-family: customFont; 
+   font-family: customFont;
+   /* 
    background: linear-gradient(45deg, red, white, blue);
    background-size: 400% 400%;
    animation: background-animation 30s ease infinite;
+   */
+   background-color: white;
 }
 
 footer {
