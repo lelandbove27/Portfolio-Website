@@ -143,7 +143,7 @@ footer {
  }
 
  #project-nav {
-  position: relative;
+  position: sticky;
   top: 0;
   left: 0;
   opacity: 0.5;
@@ -198,8 +198,12 @@ footer {
   filter: brightness(130%);
  }
 
- .displayed-image {
+ iframe, .displayed-image {
   height: 470px;
   width: 950px;
   padding: 20px;
+ }
+
+ p {
+  text-align: center;
  }
