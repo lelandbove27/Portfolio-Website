@@ -1,5 +1,5 @@
 let currentImageNumber = 0;
-let totalImages = 4;
+let totalImages = 2;
 function cycleImage(direction) {
     let currentImage;
     let previousImage = document.getElementById(`img${currentImageNumber}`);

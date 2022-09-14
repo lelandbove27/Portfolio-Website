@@ -4,7 +4,8 @@
 }
 
 h1 {
-  padding: 20px;
+  font-size: 2rem;
+  text-decoration:underline;
 }
 
 body {
@@ -214,3 +215,24 @@ footer {
  p {
   text-align: center;
  }
+
+ ul {
+  list-style-type: none;
+  padding: 0;
+ }
+
+ #centered-header {
+    text-align: center;
+ }
+
+ h1, h2, h3 {
+  text-align: center;
+ }
+
+ .centered {
+  text-align: center;
+ }
+
+#tech-list {
+  text-align: center; 
+}
