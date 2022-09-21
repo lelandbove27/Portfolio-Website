@@ -14,16 +14,10 @@ Things to think about /fix
 - Do a lighthouse test at the end 
 - use cubic-bezier animation for how proficient my skills in languages are
 - Allow users to customize parts of the background like a color picker for the background gradient (have a little preview before so they can see what it will look like)
-- Have a custom domain 
+- Have a custom domain
+- Add the sidebar with anchors to the resume/experience page and add more classes
+- Do all the lighthouse stuff to make it have perfect scores
+- Test the website on different devices and screen sizes 
 
-Projects
-- Graphics Project
-- Discord bot
-- recipe manager
-- movie display react app 
 
-Projects page Layout
-- normal header
-- side bar with anchors to each of the individual Projects
-- each project has a description with images and a link to the github source code
-- for the images for each project, have an image gallery with small images that when clicked on become big (do the arrow thing as well)
+
