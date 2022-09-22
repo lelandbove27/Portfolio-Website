@@ -197,6 +197,12 @@ footer {
  }
 
  p {
+  max-width: 50rem;
+  text-align: left;
+  margin: auto;
+ }
+
+ p.centered {
   text-align: center;
  }
 
