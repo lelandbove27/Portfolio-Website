@@ -2,8 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Projects</title>
         <link rel="stylesheet" href="style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/a08e856e0b.js" crossorigin="anonymous"></script>
         <script type="module" src="projects.js"></script>
     </head>
@@ -24,68 +26,129 @@
                     <a href="#pba">Physics-based Animation</a>
                     <a href="#dbse">Discord Bot Stock Exchange</a>
                     <a href="#mf">Movie Finder</a>
-                    <a href="#ma">Meme App</a>
+                    <a href="#da">Data Analytics App</a>
+                    <a href="#sdb">School Database Management App</a>
                 </nav>
                 <section id="project-content">
-                    <h1 id="rm">Recipe Manager</h1>
-                    <section id="rm-images">
-                        <img id="rm-displayed-image" class="displayed-image" src=""/>
-                        <div class="non-displayed-images">
-                            <img id="rm-img1" class="small-image" src="media/rm-login.png"/>
-                            <img id="rm-img2" class="small-image" src="media/rm-main.png"/>
-                            <img id="rm-img3" class="small-image" src="media/rm-create.png"/>
-                            <img id="rm-img4" class="small-image" src="media/rm-view.png"/>
-                            <img id="rm-img5" class="small-image" src="media/rm-list.png"/>
-                        </div>
-                    </section>
-                    <p>
-                        For this project, I worked with a group of 9 students 
-                        in my class on this web app. Because of this project, 
-                        I learned a lot of basic web development, improved my 
-                        skills in HTMl, CSS, and JavaScript, learned how to work 
-                        with others on the same codebase (Github), became more 
-                        proficient in using Github and Github Actions, and most 
-                        importantly I learned how to work well with a team.  
-                    </p>
-                    <h1 id="pba">Physics-based Animation</h1>
-                    <section id="pba-images">
-                        <video controls class="displayed-image">
-                            <source src="./media/cse167project.mp4" type="video/mp4"/>
-                            Your browser doesn't support this video
-                        </video>
-                    </section>
-                    <p> For this project, I created a physics-based simulation 
-                        using OpenGL based on the Dzhanibekov effect, or the 
-                        tennis racket theorem, which states that when an object 
-                        has three distinct moments of inertia, it will be stable 
-                        along two axes of rotation, but unstable along the
-                        middle, or intermediate axis. An example of this is
-                        tossing a tennis racket into the air. If you hold it 
-                        out in front of you by the handle with the strings horizontal 
-                        and flip it vertically (have the larger end flip towards you), 
-                        it will rotate midair and the other side of the strings will 
-                        be on top. </p>
-                    <h1 id="dbse">Discord Bot Stock Exchange</h1>
-                    <section id="dbse-images">
-                        <img id="dbse-displayed-image" class="displayed-image" src=""/>
-                        <div class="non-displayed-images">
-                            <img id="dbse-img1" class="small-image" src="media/dbse-help.png"/>
-                            <img id="dbse-img2" class="small-image" src="media/dbse-price-buy-view.png"/>
-                            <img id="dbse-img3" class="small-image" src="media/dbse-sell.png"/>
-                            <img id="dbse-img4" class="small-image" src="media/dbse-leaderboard.png"/>
-                        </div>
-                    </section>
-                    <h1 id="mf">Movie Finder</h1>
-                    <section id="mf-images">
-                        <img id="mf-displayed-image" class="displayed-image" src=""/>
-                        <div class="non-displayed-images">
-                            <img id="mf-img1" class="small-image" src="media/mf-nothing.png"/>
-                            <img id="mf-img2" class="small-image" src="media/mf-waltuh.png"/>
-                            <img id="mf-img3" class="small-image" src="media/mf-spiderman.png"/>
-                        </div>
-                    </section>
-                    <h1 id="ma">Meme App</h1>
-                    <p>Coming soon!</p>
+                    <div>
+                        <h1 id="rm">Recipe Manager</h1>
+                        <section id="rm-images">
+                            <img id="rm-displayed-image" class="displayed-image" src=""/>
+                            <div class="non-displayed-images">
+                                <img id="rm-img1" class="small-image" src="media/rm-login.png"/>
+                                <img id="rm-img2" class="small-image" src="media/rm-main.png"/>
+                                <img id="rm-img3" class="small-image" src="media/rm-create.png"/>
+                                <img id="rm-img4" class="small-image" src="media/rm-view.png"/>
+                                <img id="rm-img5" class="small-image" src="media/rm-list.png"/>
+                            </div>
+                        </section>
+                        <p>
+                            For this project, I worked with a group of 9 students 
+                            in my class on this web app. Because of this project, 
+                            I learned a lot of basic web development, improved my 
+                            skills in HTMl, CSS, and JavaScript, learned how to work 
+                            with others on the same codebase (Github), became more 
+                            proficient in using Github and Github Actions, and most 
+                            importantly I learned how to work well with a team.  
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="pba">Physics-based Animation</h1>
+                        <section id="pba-images">
+                            <video controls class="displayed-image">
+                                <source src="./media/cse167project.mp4" type="video/mp4"/>
+                                Your browser doesn't support this video
+                            </video>
+                        </section>
+                        <p> For this project, I created a physics-based simulation 
+                            using OpenGL based on the Dzhanibekov effect, or the 
+                            tennis racket theorem, which states that when an object 
+                            has three distinct moments of inertia, it will be stable 
+                            along two axes of rotation, but unstable along the
+                            middle, or intermediate axis. An example of this is
+                            tossing a tennis racket into the air. If you hold it 
+                            out in front of you by the handle with the strings horizontal 
+                            and flip it vertically (have the larger end flip towards you), 
+                            it will rotate midair and the other side of the strings will 
+                            be on top. 
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="dbse">Discord Bot Stock Exchange</h1>
+                        <section id="dbse-images">
+                            <img id="dbse-displayed-image" class="displayed-image" src=""/>
+                            <div class="non-displayed-images">
+                                <img id="dbse-img1" class="small-image" src="media/dbse-help.png"/>
+                                <img id="dbse-img2" class="small-image" src="media/dbse-price-buy-view.png"/>
+                                <img id="dbse-img3" class="small-image" src="media/dbse-sell.png"/>
+                                <img id="dbse-img4" class="small-image" src="media/dbse-leaderboard.png"/>
+                            </div>
+                        </section>
+                        <p>
+                            Using the Discord API and Node.js, a group of students and I built a 
+                            discord bot that acts as a simulated stock exchange, allowing users to 
+                            buy and sell stocks using real-time prices and compete to see who can 
+                            earn the most money.  
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="mf">Movie Finder</h1>
+                        <section id="mf-images">
+                            <img id="mf-displayed-image" class="displayed-image" src=""/>
+                            <div class="non-displayed-images">
+                                <img id="mf-img1" class="small-image" src="media/mf-nothing.png"/>
+                                <img id="mf-img2" class="small-image" src="media/mf-waltuh.png"/>
+                                <img id="mf-img3" class="small-image" src="media/mf-spiderman.png"/>
+                            </div>
+                        </section>
+                        <p>
+                            Using an API to find movies, I created a React.js app 
+                            that allows users to search for movies or TV shows 
+                            and it will display the poster image for that movie or 
+                            TV show. 
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="da">Data Analytics Web App</h1>
+                        <section id="da-images">
+                            <img id="da-displayed-image" class="displayed-image" src=""/>
+                            <div class="non-displayed-images">
+                                <img id="da-img1" class="small-image" src="media/da-dashboard.png"/>
+                                <img id="da-img2" class="small-image" src="media/da-report.png"/>
+                                <img id="da-img3" class="small-image" src="media/da-basicauth.png"/>
+                                <img id="da-img4" class="small-image" src="media/da-mainpage.png"/>
+                                <img id="da-img5" class="small-image" src="media/da-database.png"/>
+                                <img id="da-img6" class="small-image" src="media/da-adminpanel.png"/>
+                            </div>
+                            <p>
+                                For this school project, I designed a web application such that when users 
+                                access the main page, data about the user is sent to and stored in a MongoDB 
+                                database using a web api that I created in Node.js and Express. On the reporting
+                                site, that data is retrieved and displayed in charts created using ZingChart.
+                                I used the MERN stack for this project. 
+                            </p>
+                        </section>
+                    </div>
+                    <div>
+                        <h1 id="sdb">School Database Management Application</h1>
+                        <section id="sdb-images">
+                            <img id="sdb-displayed-image" class="displayed-image" src=""/>
+                            <div class="non-displayed-images">
+                                <img id="sdb-img1" class="small-image" src="media/sdb-entryform.png"/>
+                                <img id="sdb-img2" class="small-image" src="media/sdb-query1.png"/>
+                                <img id="sdb-img3" class="small-image" src="media/sdb-query2.png"/>
+                                <img id="sdb-img4" class="small-image" src="media/sdb-tables.png"/>
+                            </div>
+                            <p>
+                                Using Java Server Pages, Postgres, and Apache Tomcat, I created a database
+                                management web application that allows users to fill out forms to create, 
+                                read, update, and delete database entries containing information pertaining to 
+                                school such as course offerings, student information, faculty information, and 
+                                grades. It also contains forms which when filled out will return the results of more 
+                                complex queries such as the grades given in a course by a specific professor. 
+                            </p>
+                        </section>
+                    </div>
                 </section>
             </main>
     </body>

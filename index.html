@@ -2,12 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Leland Bove Portfolio Website</title>
         <link rel="stylesheet" href="style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/a08e856e0b.js" crossorigin="anonymous"></script>
         <script type="module" src="index.js"></script>
     </head>
-    <body>
+    <body id="home-page">
         <header>
             <nav class="main-nav main-content">
                 <a class="link" style="color: gray;">Home</a>
@@ -18,17 +20,24 @@
             <hr class="divider">
         </header>
         <main class="main-content">
-            <h1>Hello! My name is Leland Bove</h1>
-            <h2>I am a Computer Science student at UC San Diego</h2>
-            <section id="image-gallery">
-                <img id="img0" class="image" alt="picture-of-me-1" src="media/me.webp"/>
-                <img id="img1" class="image invisible-image" alt="picture-of-me-2" src="media/senior-portrait.webp"/>
-            </section>
-            <div id="arrows">
-                <i id="left-arrow" class="fa-solid fa-arrow-left arrow fa-2x"></i>
-                <i class="fa fa-fw"></i>
-                <i id="right-arrow" class="fa-solid fa-arrow-right arrow fa-2x"></i>
+            <div id="container">
+                <div id="headers">
+                    <h1>Hello! My name is Leland Bove</h1>
+                    <h2>I am a Computer Science student at UC San Diego</h2>
+                </div>
+                <div id="image-gallery-container">
+                    <section id="image-gallery">
+                        <img id="img0" class="image img-fluid" alt="picture-of-me-1" src="media/me.webp"/>
+                        <img id="img1" class="image invisible-image img-fluid" alt="picture-of-me-2" src="media/senior-portrait.webp"/>
+                    </section>
+                    <div id="arrows">
+                        <i id="left-arrow" class="fa-solid fa-arrow-left arrow fa-2x"></i>
+                        <i class="fa fa-fw"></i>
+                        <i id="right-arrow" class="fa-solid fa-arrow-right arrow fa-2x"></i>
+                    </div>
+                </div>
             </div>
+            
         </main>
         <footer>
             <nav class="secondary-nav">

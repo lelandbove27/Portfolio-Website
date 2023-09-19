@@ -3,6 +3,14 @@
    src: url("media/Comfortaa-VariableFont_wght.woff");
 }
 
+#home-page {
+   /*
+   background-image: url("/media/pexels-felix-mittermeier-956999.jpg");
+   background-size: cover;
+   color: white;
+   */
+}
+
 h1 {
   font-size: 2rem;
   text-decoration:underline;
@@ -27,6 +35,15 @@ footer {
    width: 100%;
 }
 
+#container {
+   display: flex;
+}
+
+#headers {
+   margin-top: 30vh;
+   margin-right: 10vh;
+}
+
 .image {
    height: 406px;
    width: 312px;
@@ -45,6 +62,14 @@ footer {
   margin-right: auto;
   height: 415px;
   width:312px;
+}
+
+#image-gallery-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10vh;
+   margin-right: 20vh; 
 }
 
 #image-gallery img {
