@@ -1,14 +1,12 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+} 
+
 @font-face {
    font-family: customFont;
    src: url("media/Comfortaa-VariableFont_wght.woff");
-}
-
-#home-page {
-   /*
-   background-image: url("/media/pexels-felix-mittermeier-956999.jpg");
-   background-size: cover;
-   color: white;
-   */
 }
 
 h1 {
@@ -20,12 +18,14 @@ body {
    margin: 0px;
    padding: 0px;
    font-family: customFont;
-   /* 
-   background: linear-gradient(45deg, red, white, blue);
-   background-size: 400% 400%;
-   animation: background-animation 30s ease infinite;
-   */
    background-color: white;
+}
+
+.home-page {
+   background-image: url('media/background.jpg');
+   background-size: cover;
+   background-repeat: repeat;
+   color: white;
 }
 
 footer {
@@ -157,6 +157,18 @@ footer {
    flex-direction: row;
    align-items: stretch;
  }
+
+ .project-entry {
+   display: flex;
+   align-items: flex-start;
+
+ }
+
+ @media (max-width: 767px) {
+   .project-entry {
+      flex-direction: column;
+   }
+ } 
  
 
  #project-nav {
@@ -216,8 +228,9 @@ footer {
  }
 
  iframe, .displayed-image {
-  height: 470px;
-  width: 950px;
+  height: auto;
+  max-height: 70vh;
+  width: 900px;
   padding: 20px;
  }
 
