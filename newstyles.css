@@ -1,4 +1,40 @@
+.shadow-box {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+}
+
+.img-size {
+    width: 30vw;
+    height: auto;
+}
+
+.logo-size {
+    width: 200px;
+    height: auto;
+}
+
+.nav-spacing {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-background {
+    background: white;
+}
+
 .page {
     width: 100vw;
     height: 100vh;
 }
+
+.project {
+
+}
+
+.top-padding {
+    padding-top: 11vh;
+
+    @media (max-width: 576px) {
+        padding-top: 20vh;
+    }
+}
+
