@@ -33,13 +33,12 @@ let projects = [
 ];
 
 
-function createProjectCard(project) {
+function createProjectCard(project, active) {
     let idNum = 0;
 
     
     let id = "carousel" + idNum;
     idNum++;
-
 
     let containerDiv = document.createElement("div");
     containerDiv.className = "container";
@@ -51,7 +50,6 @@ function createProjectCard(project) {
     title.innerHTML = project.name;
 
     titleRowDiv.appendChild(title);
-    containerDiv.appendChild(titleRowDiv);
 
     let contentRowDiv = document.createElement("div");
     contentRowDiv.className = "row";
@@ -69,9 +67,32 @@ function createProjectCard(project) {
     let carouselInner = document.createElement("div");
     carouselInner.className = "carousel-inner";
 
+    project.images.forEach(image => {
+        let item = document.createElement("div");
+        if(active) {
+            item.className = "carousel-item active";
+        }
+        else {
+            item.className = "carousel-item"
+        }
 
-    carouselDiv.appendChild(carouselInner);
+        let carouselImage = document.createElement("img");
+        carouselImage.src = "media/" + image;
+        carouselImage.className = "d-block w-100";
+        carouselImage.alt = "Project Image"
+
+        item.appendChild(carouselImage);
+
+        carouselInner.appendChild(item);
+       
+    })
+
     carouselColDiv.appendChild(carouselDiv);
+    contentRowDiv.appendChild(carouselColDiv);
+    carouselDiv.appendChild(carouselInner);
+
+    containerDiv.appendChild(titleRowDiv);
+    containerDiv.appendChild(carouselDiv);
 
 
     return containerDiv;
@@ -79,9 +100,11 @@ function createProjectCard(project) {
 }
 
 let projectsSection = document.getElementById("projects");
+let active = true;
 
 projects.forEach(project => {
-    let projectCard = createProjectCard(project);
+    let projectCard = createProjectCard(project, active);
+    active = false;
     projectsSection.appendChild(projectCard);
 });
 
