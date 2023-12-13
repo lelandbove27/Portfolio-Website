@@ -22,10 +22,12 @@ body {
 }
 
 .home-page {
+   /*
    background-image: url('media/background.jpg');
-   background-size: cover;
-   background-repeat: repeat;
-   color: white;
+   //background-size: cover;
+   //background-repeat: repeat;
+   */
+   color: black;
 }
 
 footer {
