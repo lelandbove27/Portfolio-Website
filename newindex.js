@@ -62,6 +62,7 @@ function createProjectCard(project, active) {
 
     let carouselDiv = document.createElement("div");
     carouselDiv.className = "carousel slide"; 
+    carouselDiv.id = "carousel";
     carouselDiv.setAttribute("data-ride", "carousel");
 
     let carouselInner = document.createElement("div");
@@ -85,7 +86,12 @@ function createProjectCard(project, active) {
 
         carouselInner.appendChild(item);
        
-    })
+    });
+
+    let carouselLeft = document.createElement("a");
+    carouselLeft.className =  "carousel-control-prev";
+    carouselLeft.href = "#carousel";
+
 
     carouselColDiv.appendChild(carouselDiv);
     contentRowDiv.appendChild(carouselColDiv);
