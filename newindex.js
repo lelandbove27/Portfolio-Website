@@ -33,12 +33,7 @@ let projects = [
 ];
 
 
-function createProjectCard(project, active) {
-    let idNum = 0;
-
-    
-    let id = "carousel" + idNum;
-    idNum++;
+function createProjectCard(project, active, id) {
 
     let containerDiv = document.createElement("div");
     containerDiv.className = "container";
@@ -62,16 +57,19 @@ function createProjectCard(project, active) {
 
     let carouselDiv = document.createElement("div");
     carouselDiv.className = "carousel slide"; 
-    carouselDiv.id = "carousel";
+    carouselDiv.id = "carousel" + id;
     carouselDiv.setAttribute("data-ride", "carousel");
+    carouselDiv.setAttribute("data-interval", "false")
 
     let carouselInner = document.createElement("div");
     carouselInner.className = "carousel-inner";
 
+    activeFlag = active;
     project.images.forEach(image => {
         let item = document.createElement("div");
         if(active) {
             item.className = "carousel-item active";
+            active = false;
         }
         else {
             item.className = "carousel-item"
@@ -90,12 +88,28 @@ function createProjectCard(project, active) {
 
     let carouselLeft = document.createElement("a");
     carouselLeft.className =  "carousel-control-prev";
-    carouselLeft.href = "#carousel";
+    carouselLeft.href = "#carousel" + id;
+    carouselLeft.setAttribute("role", "button");
+    carouselLeft.setAttribute("data-slide", "prev");
+    let prevIcon = document.createElement("span");
+    prevIcon.className = "carousel-control-prev-icon";
+    carouselLeft.appendChild(prevIcon)
 
+    let carouselRight = document.createElement("a");
+    carouselRight.className =  "carousel-control-next";
+    carouselRight.href = "#carousel" + id;
+    carouselRight.setAttribute("role", "button");
+    carouselRight.setAttribute("data-slide", "next");
+    let nextIcon = document.createElement("span");
+    nextIcon.className = "carousel-control-next-icon";
+    carouselRight.appendChild(nextIcon);
+    
 
     carouselColDiv.appendChild(carouselDiv);
     contentRowDiv.appendChild(carouselColDiv);
     carouselDiv.appendChild(carouselInner);
+    carouselDiv.appendChild(carouselRight);
+    carouselDiv.appendChild(carouselLeft);
 
     containerDiv.appendChild(titleRowDiv);
     containerDiv.appendChild(carouselDiv);
@@ -106,12 +120,13 @@ function createProjectCard(project, active) {
 }
 
 let projectsSection = document.getElementById("projects");
-let active = true;
+let id = 0;
 
 projects.forEach(project => {
-    let projectCard = createProjectCard(project, active);
-    active = false;
+    let active = true;
+    let projectCard = createProjectCard(project, active, id);
     projectsSection.appendChild(projectCard);
+    id++;
 });
 
 
