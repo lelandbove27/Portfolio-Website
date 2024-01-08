@@ -59,7 +59,7 @@ function createProjectCard(project, active, id) {
     carouselDiv.className = "carousel slide"; 
     carouselDiv.id = "carousel" + id;
     carouselDiv.setAttribute("data-ride", "carousel");
-    carouselDiv.setAttribute("data-interval", "false")
+    carouselDiv.setAttribute("data-interval", "false");
 
     let carouselInner = document.createElement("div");
     carouselInner.className = "carousel-inner";
@@ -77,8 +77,8 @@ function createProjectCard(project, active, id) {
 
         let carouselImage = document.createElement("img");
         carouselImage.src = "media/" + image;
-        carouselImage.className = "d-block w-100";
-        carouselImage.alt = "Project Image"
+        carouselImage.className = "d-block w-100 img-fluid carousel-image-sizing";
+        carouselImage.alt = "Project Image";
 
         item.appendChild(carouselImage);
 
@@ -96,7 +96,7 @@ function createProjectCard(project, active, id) {
     carouselLeft.appendChild(prevIcon)
 
     let carouselRight = document.createElement("a");
-    carouselRight.className =  "carousel-control-next";
+    carouselRight.className = "carousel-control-next";
     carouselRight.href = "#carousel" + id;
     carouselRight.setAttribute("role", "button");
     carouselRight.setAttribute("data-slide", "next");
@@ -104,15 +104,30 @@ function createProjectCard(project, active, id) {
     nextIcon.className = "carousel-control-next-icon";
     carouselRight.appendChild(nextIcon);
     
-
     carouselColDiv.appendChild(carouselDiv);
     contentRowDiv.appendChild(carouselColDiv);
     carouselDiv.appendChild(carouselInner);
     carouselDiv.appendChild(carouselRight);
     carouselDiv.appendChild(carouselLeft);
-
     containerDiv.appendChild(titleRowDiv);
     containerDiv.appendChild(carouselDiv);
+
+    /*
+    let fullCarousel = document.createElement("div");
+    fullCarousel.className = "full-carousel";
+    fullCarousel.appendChild(carouselLeft);
+    fullCarousel.appendChild(carouselDiv);
+    fullCarousel.appendChild(carouselRight);
+
+    containerDiv.appendChild(fullCarousel);
+    */
+
+    /*
+    containerDiv.appendChild(carouselLeft);
+    containerDiv.appendChild(carouselRight);
+    */
+    
+    
 
 
     return containerDiv;
