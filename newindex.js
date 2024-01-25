@@ -66,7 +66,7 @@ class technologyCard {
 
 let technologyCards = [
     new technologyCard("HTML", "./media/icons/htmlIcon.png", "Proficient"),
-    new technologyCard("CSS", "./media/icons/cssIcon.png", "Proficient"),
+    new technologyCard("CSS", "./media/icons/htmlIcon.png", "Proficient"),
     new technologyCard("JavaScript", "media/icons/javascriptIcon.png", "Proficient"),
     new technologyCard("Python", "media/icons/pythonIcon.png", "Familiar"),
     new technologyCard("XCode", "media/icons/xcodeIcon.png", "Proficient"),
