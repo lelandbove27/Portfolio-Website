@@ -1,3 +1,8 @@
+.icon-img {
+    height: 150px;
+    width: auto;
+}
+
 .img-size {
     width: 30vw;
     height: auto;
@@ -20,10 +25,7 @@
 .page {
     width: 100vw;
     height: 100vh;
-}
-
-.project {
-
+    padding-top: 100px;
 }
 
 .shadow-box {

@@ -23,7 +23,6 @@ let projects = [
 
 ];
 
-
 function createProjectCard(project, active, id) {
 
     let containerDiv = document.createElement("div");
@@ -42,9 +41,6 @@ function createProjectCard(project, active, id) {
 
     let imgCol = document.createElement("div");
     imgCol.className = "col";
-    
-
-    
 
     return containerDiv;
 
@@ -59,5 +55,52 @@ projects.forEach(project => {
     projectsSection.appendChild(projectCard);
     id++;
 });
+
+class technologyCard {
+    constructor(name, icon, proficiency) {
+        this.name = name;
+        this.icon = icon;
+        this.proficiency = proficiency;
+    }
+}
+
+let technologyCards = [
+    new technologyCard("HTML", "media/icons/htmlIcon.png", "Proficient"),
+    new technologyCard("CSS", "/media/icons/cssIcon.png", "Proficient"),
+    new technologyCard("JavaScript", "/media/icons/javascriptIcon.png", "Proficient"),
+    new technologyCard("Python", "/media/icons/pythonIcon.png", "Familiar"),
+    new technologyCard("XCode", "/media/icons/xcodeIcon.png", "Proficient"),
+    new technologyCard("Swift", "/media/icons/swiftIcon.png", "Proficient"),
+]
+
+let experienceSection = document.getElementById("experience-body");
+
+technologyCards.forEach(technologyCard => {
+    let card = document.createElement("div");
+    card.className = "icon-card card col m-4 rounded-5";
+    card.style.maxWidth = "250px";
+    card.style.minWidth = "250px";
+    card.style.maxHeight = "250px";
+    card.style.minHeight = "250px";
+    let cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+    let icon = document.createElement("img");
+    icon.className = "icon-img";
+    icon.src = technologyCard.icon;
+    icon.alt = technologyCard.name + "icon";
+    let name = document.createElement("p");
+    name.innerHTML = technologyCard.name;
+    let proficiency = document.createElement("p");
+    proficiency.innerHTML = technologyCard.proficiency;
+
+    cardBody.appendChild(icon);
+    cardBody.appendChild(name);
+    cardBody.appendChild(proficiency);
+
+    card.appendChild(cardBody)
+
+    experienceSection.appendChild(card);
+});
+
 
 
