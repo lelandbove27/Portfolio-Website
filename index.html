@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="newstyles.css">
+        <script defer src="./newindex.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script defer src="https://kit.fontawesome.com/a08e856e0b.js" crossorigin="anonymous"></script>
         <title>Leland Bove Portfolio Website</title>
-        <link rel="stylesheet" href="style.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/a08e856e0b.js" crossorigin="anonymous"></script>
-        <script type="module" src="index.js"></script>
     </head>
-    <body class="home-page">
-        <header>
-            <nav class="main-nav main-content">
-                <a class="link" href="index.html">Home</a>
-                <a class="link" href="contact.html">Contact Me</a>
-                <a class="link" href="experience.html">Experience</a>
-                <a class="link" style="color: gray;" href="projects.html">Projects</a>
-            </nav>
-            <hr class="divider">
-        </header>
-        <main class="main-content">
-            <div id="container">
-                <div id="headers">
-                    <h1>Hello! My name is Leland Bove</h1>
-                    <h2>I am a recent Computer Science graduate from UC San Diego</h2>
-                </div>
-                <div id="image-gallery-container">
-                    <section id="image-gallery">
-                        <img id="img0" class="image img-fluid" alt="picture-of-me-1" src="media/me.webp"/>
-                        <img id="img1" class="image invisible-image img-fluid" alt="picture-of-me-2" src="media/photo.webp"/>
-                    </section>
-                    <div id="arrows">
-                        <i id="left-arrow" class="fa-solid fa-arrow-left arrow fa-2x"></i>
-                        <i class="fa fa-fw"></i>
-                        <i id="right-arrow" class="fa-solid fa-arrow-right arrow fa-2x"></i>
+    <body>
+        <header class="main-header fixed-top" data-bs-target="#navbarNav">
+            <nav class="navbar nav-pills navbar-expand-sm navbar-light nav-background shadow-box">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="media/logo.png" class="logo-size"></a>
+                    <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class="collpase navbar-collapse"  id="navbarNav">
+                        <ul class="navbar-nav ms-auto nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-me">About Me</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#experience">Experience</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            
-        </main>
-        <footer>
-            <nav class="secondary-nav">
-                <a class="link" href="https://github.com/lelandbove27?tab=repositories"><i class="fa-cog fa-brands fa-fw fa-2x fa-github-square"></i></a>
-                <a class="link" href="https://www.linkedin.com/in/leland-bove-619516236/"><i class="fa-cog fab fa-fw fa-2x fa-linkedin-in"></i></a>
             </nav>
-        </footer>
+        </header>
+        <main>
+            <section class="page page-height" id="about-me">
+                <div class="container-fluid">
+                    <div class="row align-items-center text-center">
+                        <div class="col">
+                            <header class="top-room">
+                                <h1>Leland Bove</h1>
+                                <h2>iOS and Web Developer</h2>
+                            </header>
+                            <section class="top-room">
+                                <h3>Contact Me</h3>
+                                <ul class="contact-list">
+                                    <li>Phone: 650-759-1565</li>
+                                    <li>Email: lelandbove27@gmail.com</li>
+                                    <li>
+                                        <div class="social-icons-div">
+                                            <a href="https://www.linkedin.com/in/lelandbove/"><i class="social-icon fa-cog fab fa-fw fa-2x fa-linkedin-in"></i></a>
+                                            <a href=" https://github.com/lelandbove27"><i class="social-icon fa-cog fa-brands fa-fw fa-2x fa-github-square"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            
+                        </div>
+                        <div class="col">
+                            <img src="media/photo.webp" class="img-fluid rounded-circle img-size" alt="Photo of Me">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <button type="button" class="btn large-arrow-button">
+                             <a href="#experience" class="text-lg large-arrow">
+                                <i class="bi bi-chevron-down large-arrow "></i>
+                            </a>
+                        </button>        
+                    </div>
+                </div>
+            </section>
+            <section class="page" id="experience">
+                <div class="container text-center">
+                    <h1>Experience</h1>
+                    <h2>Languages and Technologies</h2>
+                    <div class="row justify-content-center g-4" id="experience-body">
+        
+                    </div>
+                    <!--<h2>Classes and Certifications</h2>-->
+                    <div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="page centered-column" id="projects">
+                <div class="container">
+                    <h1>Projects</h1>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
