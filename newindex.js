@@ -41,7 +41,7 @@ let projectCards = [
         "Easiest Shopping List",
         "December 2023 - Current",
         ["./media/sl-home.png", "./media/sl-shopping.png"],
-        "A shopping list app that allows users to create a shopping list and cross things off the list after purchasing them at the store. This app stores the previous items added to the list, allowing users to re-add items to the list with just a tap.",
+        "A shopping list app that allows users to create a shopping list and cross things off the list after purchasing them at the store. This app stores the previous items added to the list, allowing users to re-add items to the list with just a tap. The newest version allows users to create categories for their items to organize them for ease of use.",
         ["Swift", "SwiftUI", "Core Data"]
     )
    
@@ -80,8 +80,9 @@ projectCards.forEach(project => {
     let projectTechnologies = document.createElement("p");
     let technologiesString = "Technologies Used:";
     (project.technologies).forEach(technology => {
-        technologiesString += ` ${technology}`;
+        technologiesString += ` ${technology},`;
     });
+    technologiesString = technologiesString.slice(0, -1);
     projectTechnologies.innerHTML = technologiesString;
 
     projectsSection.appendChild(card);
